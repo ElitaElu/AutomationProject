@@ -19,7 +19,7 @@ namespace AutomationProject.src.code.session
             browser = factoryBrowser.FactoryBrowser.Make("Chrome").Create();
         }
 
-        // metodo esttico publico para su acceso global
+        // metodo esteico publico para su acceso global
         public static Session Instance()
         {
             if (instance == null)

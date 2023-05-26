@@ -18,23 +18,24 @@ namespace AutomationProject.src.code.page
         public Button addNewProjectButton = new Button(By.XPath("//button[@aria-label='Añadir proyecto']"));
 
 
-        
-        public Button subMenuIcon = new Button(By.XPath("//button[@aria-label='Más acciones de proyecto']"));
-        public Button editButton = new Button(By.XPath("//ul[@role='menu']//li//div//div[text()='Editar proyecto']"));
+        public Button subMenuIcon = new Button(By.XPath("//button[@aria-label='Menú de opciones del proyecto']"));
+        public Button editButton = new Button(By.XPath("//li/div/div[text()='Editar proyecto']"));
        
        
-        public Button deleteButton = new Button(By.Id("ProjShareMenuDel"));
+        public Button deleteButton = new Button(By.XPath("//li/div/div[text()='Eliminar proyecto']"));
 
 
     public Boolean ProjectNameIsDisplayed(String nameValue)
     {
         Label nameProject = new Label(By.XPath("(//ul[@id=\"projects_list\"]//div//a//span[text()='" + nameValue + "'])[last()]"));
+
+        
         return nameProject.IsControlDisplayed();
     }
 
     public void ClickProjectName(String nameValue)
         {
-            Label nameProject = new Label(By.XPath("(//ul[@id='projects_list']//div//a//span[text()='" + nameValue + "'])[last()]"));
+            Label nameProject = new Label(By.XPath("(//ul[@id=\"projects_list\"]//div//a//span[text()='" + nameValue + "'])[last()]"));
             nameProject.Click();
         }
     }

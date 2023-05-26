@@ -9,7 +9,8 @@ using OpenQA.Selenium.Chrome;
 
 namespace AutomationProject.src.code.test
 {
-   public class TestBase
+   public class 
+        TestBase
     {
         [TestInitialize]
         public void OpenBrowser()
@@ -22,5 +23,7 @@ namespace AutomationProject.src.code.test
         {
             session.Session.Instance().CloseBrowser();
         }
+
+     
     }
 }

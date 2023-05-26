@@ -69,6 +69,7 @@
     <Compile Include="src\code\factoryBrowser\Grid.cs" />
     <Compile Include="src\code\factoryBrowser\IBrowser.cs" />
     <Compile Include="src\code\page\addProject.cs" />
+    <Compile Include="src\code\page\Deletepage.cs" />
     <Compile Include="src\code\page\EditPage.cs" />
     <Compile Include="src\code\page\leftSite.cs" />
     <Compile Include="src\code\page\LoginSection.cs" />
